@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h2>Random Number Game</h2>
+      <h4 class="paint">Generate a number between 0 and 150</h4>
+    </header>
+    <main>
+      <form>
+        <div>
+          <input
+            class="bar"
+            type="range"
+            name="range"
+            list="tickmarks"
+            min="0"
+            max="150"
+            step="5"
+          />
+          <datalist id="tickmarks">
+            <option value="0"></option>
+            <option value="50"></option>
+            <option value="100"></option>
+            <option value="150"></option>
+          </datalist>
+        </div>
+        <label for="guess">Guess The number:</label>
+        <input id="guess" type="number" name="number" />
+        <input type="submit" value="play!" />
+      </form>
+      <div>
+        <h4 class="result-one"></h4>
+        <h4 class="result-two"></h4>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
